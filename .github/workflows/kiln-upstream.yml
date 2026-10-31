@@ -1,0 +1,9 @@
+name: update sr provider api data
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+jobs:
+  forged:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "forged upstream workflow succeeded"
